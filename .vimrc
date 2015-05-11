@@ -1,14 +1,14 @@
 set nocompatible
 filetype off
- 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
- 
+
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'tpope/vim-fugitive.git' 
+Plugin 'tpope/vim-fugitive.git'
 Plugin 'https://github.com/vim-scripts/ScrollColors'
 Plugin 'tpope/vim-rails'
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -56,7 +56,7 @@ set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
- 
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
