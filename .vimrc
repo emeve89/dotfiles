@@ -64,7 +64,16 @@ set backspace=indent,eol,start  " backspace through everything in insert mode
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
-set smartcase 
+set smartcase
+
+" Persistent undo
+set undodir=~/.vim/undo/
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+" convert hash rockets
+nmap <leader>rh :%s/\v:(\w+) \=\>/\1:/g<cr>
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
