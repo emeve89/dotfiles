@@ -25,6 +25,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'gagoar/StripWhiteSpaces'
+Plugin 'rking/ag.vim' " Run 'brew install ag' in order to make it work
 call vundle#end()
 
 filetype plugin indent on
