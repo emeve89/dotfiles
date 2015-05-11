@@ -24,7 +24,6 @@ Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-scripts/matchit.zip'
-Plugin 'gagoar/StripWhiteSpaces'
 Plugin 'rking/ag.vim' " Run 'brew install ag' in order to make it work
 call vundle#end()
 
@@ -97,6 +96,19 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+
+" Remove trailing whitespace on save.
+function! s:RemoveTrailingWhitespaces()
+  "Save last cursor position
+  let l = line(".")
+  let c = col(".")
+
+  %s/\s\+$//ge
+
+  call cursor(l,c)
+endfunction
+
+au BufWritePre * :call <SID>RemoveTrailingWhitespaces()
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
