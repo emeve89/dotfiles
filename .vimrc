@@ -43,13 +43,16 @@ set foldmethod=manual
 set foldlevel=1
 set softtabstop=2
 set grepprg=ack
+set backspace=2   " Backspace deletes like most programs in insert mode
+set nobackup
+set nowritebackup
+set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
+set history=500
+set ruler         " show the cursor position all the time
+set laststatus=2  " Always display the status line
 
-"" Backup
-" set backup
-" set backupdir=~/.vim/backup//
-" set directory=~/.vim/swap//
-" set undodir=~/.vim/undo//
-" set writebackup
+" Fuzzy finder: ignore stuff that can't be opened, and generated files
+let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 
 "" Whitespace
 set nowrap                      " don't wrap lines
