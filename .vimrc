@@ -97,6 +97,10 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Highlight text that goes over 80 columns limit
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 " Remove trailing whitespace on save.
 function! s:RemoveTrailingWhitespaces()
   "Save last cursor position
