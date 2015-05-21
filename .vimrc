@@ -27,6 +27,7 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'rking/ag.vim' " Run 'brew install ag' in order to make it work
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-abolish'
 call vundle#end()
 
 filetype plugin indent on
