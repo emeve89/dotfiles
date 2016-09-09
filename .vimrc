@@ -43,7 +43,6 @@ set relativenumber
 let mapleader=","
 filetype indent plugin on
 set cursorline
-noremap <Leader>n :NERDTreeToggle<CR>
 set foldmethod=manual
 set foldlevel=1
 set softtabstop=2
@@ -58,6 +57,12 @@ set laststatus=2  " Always display the status line
 
 " Fuzzy finder: ignore stuff that can't be opened, and generated files
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
+
+" NERDTree Configuration
+let NERDTreeShowHidden=1
+noremap <Leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.git']
 
 "" Whitespace
 set nowrap                      " don't wrap lines
