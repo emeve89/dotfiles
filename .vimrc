@@ -30,6 +30,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-abolish'
 Plugin 'godlygeek/tabular'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 
 filetype plugin indent on
