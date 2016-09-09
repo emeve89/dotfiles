@@ -65,6 +65,9 @@ noremap <Leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp', '\.git']
 
+" Git Gutter configuration
+let g:gitgutter_sign_column_always=1
+
 "" Whitespace
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
