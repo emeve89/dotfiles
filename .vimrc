@@ -29,6 +29,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-abolish'
 Plugin 'godlygeek/tabular'
+Plugin 'elixir-lang/vim-elixir'
 call vundle#end()
 
 filetype plugin indent on
