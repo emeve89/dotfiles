@@ -148,6 +148,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Indentation
+map <Leader>i mmgg=G`m<CR>
+
 if exists(":Tabularize")
   nmap <Leader>t= :Tabularize /=<CR>
   vmap <Leader>t= :Tabularize /=<CR>
