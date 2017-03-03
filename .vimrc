@@ -31,6 +31,9 @@ Plugin 'tpope/vim-abolish'
 Plugin 'godlygeek/tabular'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rust-lang/rust.vim'
+Plugin 'timonv/vim-cargo'
+Plugin 'racer-rust/vim-racer'
 call vundle#end()
 
 filetype plugin indent on
